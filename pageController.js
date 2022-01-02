@@ -1,4 +1,4 @@
-const pageScraper = require('./pageScraper');
+const pageScraper = require('./readLinksScrapper');
 async function scrapeAll(browserInstance){
     let browser;
 	//Extract links

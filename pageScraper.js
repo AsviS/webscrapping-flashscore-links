@@ -1,7 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-
 const scraperObject = {
     url: 'https://www.flashscore.es/baloncesto/',
     async scraper(browser){
@@ -43,9 +42,9 @@ const scraperObject = {
 				if(links2[j].includes(url_split[4])){
 					const url_split2 = links2[j].split("/");
 					if (typeof url_split2[6] != "undefined" ){
-						console.log(links2[j]+"resultados");						
+						console.log(links2[j]);						
 						data = {
-						  url:links2[j]+"resultados"
+						  url:links2[j]
 						}						
 						newDataUrl.push(data);
 					}
